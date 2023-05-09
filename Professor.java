@@ -1,16 +1,16 @@
-public class Professor extends Funcionario  {
-    private String disiplina;
+public class Professor extends Funcionario {
+    private String disciplina;
 
-    public void setDisiplina(String disiplina) {
-        this.disiplina = disiplina;
+    public void setDisiplina(String disciplina) {
+        this.disciplina = disciplina;
     }
 
-    public String getDisiplina() {
-        return disiplina;
+    public String getDisciplina() {
+        return disciplina;
     }
 
-    public Professor(String nome, int idade, String endereco, double salario, String disiplina){
-super(nome, idade, endereco, salario);
-
+    public Professor(String nome, int idade, String endereco, double salario, String disciplina) {
+        super(nome, idade, endereco, salario);
+        this.disciplina = disciplina;
     }
 }

@@ -1,13 +1,13 @@
 public class Aluno extends Pessoa {
-    private String semeste;
+    private String semestre;
     private String curso;
 
-    public void setSemeste(String semeste) {
-        this.semeste = semeste;
+    public void setSemestre(String semestre) {
+        this.semestre = semestre;
     }
 
-    public String getSemeste() {
-        return semeste;
+    public String getSemestre() {
+        return this.semestre;
     }
 
     public void setCurso(String curso) {
@@ -15,15 +15,14 @@ public class Aluno extends Pessoa {
     }
 
     public String getCurso() {
-        return curso;
+        return this.curso;
     }
 
-    public Aluno(String nome, int idade, String endereco) {
+    public Aluno(String nome, int idade, String endereco, String semestre,String curso) {
         super(nome, idade, endereco);
-        setSemestre(semestre);
-        setCurso(curso);
+        this.semestre = semestre;
+        this.curso = curso;
     }
-
     public Aluno() {
 
     }
